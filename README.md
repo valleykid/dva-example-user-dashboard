@@ -1,24 +1,10 @@
-# dva-example-user-dashboard
+# rmc-example
+A example of react-magic-component
 
-详见[《12 步 30 分钟，完成用户管理的 CURD 应用 (react+dva+antd)》](https://github.com/sorrycc/blog/issues/18)。
+> Thanks [dva-example-user-dashboard](https://github.com/dvajs/dva-example-user-dashboard)
 
----
+## Differents
 
-<p align="center">
-  <img src="https://zos.alipayobjects.com/rmsportal/bmkNCEoluwGaeGjYjInf.png" />
-</p>
-
-## Getting Started
-Install dependencies.
-
-```bash
-$ npm install
-```
-
-Start server.
-
-```bash
-$ npm start
-```
-
-If success, app will be open in your default browser automatically.
+- [index.js#L10](https://github.com/valleykid/rmc-example/blob/master/src/index.js#L10)
+- [routes/Users.js#L10-L43](https://github.com/valleykid/rmc-example/blob/master/src/routes/Users.js#L10-L43)
+- [components/Users/Users.js](https://github.com/valleykid/rmc-example/blob/master/src/components/Users/Users.js) remove connect and bind-events
