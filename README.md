@@ -5,6 +5,8 @@ A example of react-magic-component
 
 ## Differents
 
-- [index.js#L10](https://github.com/valleykid/rmc-example/blob/master/src/index.js#L10)
-- [routes/Users.js#L10-L43](https://github.com/valleykid/rmc-example/blob/master/src/routes/Users.js#L10-L43)
-- [components/Users/Users.js](https://github.com/valleykid/rmc-example/blob/master/src/components/Users/Users.js) remove connect and bind-events
+- [index.js#L10](https://github.com/valleykid/dva-example-user-dashboard/blob/master/src/index.js#L10)
+- [routes/Users.js#L10-L43](https://github.com/valleykid/dva-example-user-dashboard/blob/master/src/routes/Users.js#L10-L43)
+- [components/Users/Users.js](https://github.com/valleykid/dva-example-user-dashboard/blob/master/src/components/Users/Users.js) remove connect and bind-events
+
+[View detail](https://github.com/valleykid/dva-example-user-dashboard/commit/36288bdee16dfac35e14773d8ad9f6be90e0b427)
