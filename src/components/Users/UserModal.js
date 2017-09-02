@@ -12,6 +12,29 @@ class UserEditModal extends Component {
     };
   }
 
+  showModelHandler = (e) => {
+    if (e) e.stopPropagation();
+    this.setState({
+      visible: true,
+    });
+  };
+
+  hideModelHandler = () => {
+    this.setState({
+      visible: false,
+    });
+  };
+
+  okHandler = () => {
+    const { onOk } = this.props;
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        onOk(values);
+        this.hideModelHandler();
+      }
+    });
+  };
+
   render() {
     const { children } = this.props;
     const { getFieldDecorator } = this.props.form;
@@ -23,14 +46,16 @@ class UserEditModal extends Component {
 
     return (
       <span>
-        <span>
+        <span onClick={this.showModelHandler}>
           { children }
         </span>
         <Modal
           title="Edit User"
           visible={this.state.visible}
+          onOk={this.okHandler}
+          onCancel={this.hideModelHandler}
         >
-          <Form horizontal>
+          <Form horizontal onSubmit={this.okHandler}>
             <FormItem
               {...formItemLayout}
               label="Name"

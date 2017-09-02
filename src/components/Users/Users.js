@@ -30,7 +30,7 @@ function Users({ list: dataSource, loading, total, page: current }) {
           <UserModal record={record}>
             <a>Edit</a>
           </UserModal>
-          <Popconfirm title="Confirm to delete?">
+          <Popconfirm record={record} title="Confirm to delete?">
             <a href="">Delete</a>
           </Popconfirm>
         </span>
